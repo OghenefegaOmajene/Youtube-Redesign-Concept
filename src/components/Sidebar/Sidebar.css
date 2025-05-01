@@ -1,0 +1,8 @@
+.sideBar{
+    background-color: black;
+    width: 50px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 2%;
+}
