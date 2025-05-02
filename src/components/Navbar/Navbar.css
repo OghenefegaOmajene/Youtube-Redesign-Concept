@@ -5,10 +5,13 @@
     /* left: 0px; */
     display: flex;
     align-items: center;
+    position: sticky;
     /* justify-content: space-between; */
     gap: 150px;
-    /* top: 0px; */
-    width: 98.7%;
+    top: 0px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
+    /* background-color: rgb(193, 18, 18); */
     /* border: 1px solid rgb(255, 6, 6); */
 }
 .logo{

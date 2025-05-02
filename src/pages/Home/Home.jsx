@@ -3,6 +3,8 @@ import './Home.css'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import Navbar from '../../components/Navbar/Navbar'
 import inCaseYouMissedImg1 from '../../assets/inCaseYouMissedImg1.png'
+import inCaseYouMissedImg2 from '../../assets/inCaseYouMissedImg2.png'
+import inCaseYouMissedImg3 from '../../assets/inCaseYouMissedImg3.png'
 import juxtopposed from '../../assets/juxtopposed.png'
 
 const Home = () => {
@@ -107,6 +109,24 @@ const Home = () => {
       channelName: "Juxtopposed",
       views: "150K",
       time: "4 months"
+    },
+    {
+      id: 2,
+      img: inCaseYouMissedImg2,
+      vidName: "I Redesigned Discord UI just to make it Cozier",
+      channelImg: juxtopposed,
+      channelName: "Juxtopposed",
+      views: "433K",
+      time: "1 month"
+    },
+    {
+      id: 3,
+      img: inCaseYouMissedImg3,
+      vidName: "everything about color (literally)",
+      channelImg: juxtopposed,
+      channelName: "Juxtopposed",
+      views: "315K",
+      time: "3 months"
     }
   ] 
 

@@ -1,11 +1,13 @@
 .sideBar{
     /* background-color: transparent; */
-    /* background-color: teal; */
+    /* background-color: rgba(0, 128, 128, 0.354); */
     width: 239px;
     height: 1080px;
     display: flex;
     flex-direction: column;
-    padding-top: 66px;
+    position: fixed;
+    /* top: 0px; */
+    /* padding-top: 66px; */
     /* gap: 2%; */
 }
 .box1, .box2{
