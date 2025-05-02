@@ -1,0 +1,42 @@
+.navbar{
+    height: 66px;
+    /* width: 1920px; */
+    position: absolute;
+    /* left: 0px; */
+    display: flex;
+    align-items: center;
+    /* gap: 346px; */
+    /* top: 0px; */
+    width: 98.7%;
+    /* border: 1px solid rgb(255, 6, 6); */
+}
+.logo{
+    width: 217px;
+    height: 66px;
+    display: flex;
+    align-items: center;
+    /* background-color: yellow; */
+    justify-content: start;
+    gap: 20px;
+    padding-left: 10px;
+    /* justify-content: space-around; */
+    /* border: 1px solid rgb(255, 255, 255); */
+}
+.logo img{
+    width: 112px;
+    height: 24px;
+    border: 1px solid black;
+}
+.logo i{
+    color: white;
+    font-size: 24px;
+}
+
+.search{
+    width: 727px;
+    height: 20%;
+    padding: 15px;
+    border: 1px solid #2A2A2A;
+    border-radius: 30px;
+    background-color: transparent;
+}

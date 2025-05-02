@@ -5,12 +5,15 @@ import Navbar from '../../components/Navbar/Navbar'
 
 const Home = () => {
   return (
-    <div className='Homepage'>
-        <Sidebar/>
-        <div className='homeBody'>
-            <Navbar/>
-        </div>
-    </div>
+    <>
+      <Navbar/>
+      <div className='Home'>
+          <Sidebar/>
+          <div className='homepage'>
+              
+          </div>
+      </div>
+    </>
   )
 }
 
