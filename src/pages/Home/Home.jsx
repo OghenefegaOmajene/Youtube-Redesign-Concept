@@ -2,6 +2,8 @@ import React, {useState} from 'react'
 import './Home.css'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import Navbar from '../../components/Navbar/Navbar'
+import inCaseYouMissedImg1 from '../../assets/inCaseYouMissedImg1.png'
+import juxtopposed from '../../assets/juxtopposed.png'
 
 const Home = () => {
 
@@ -96,6 +98,18 @@ const Home = () => {
     
   ]
 
+  const inCaseYouMissedContents = [
+    {
+      id: 1,
+      img: inCaseYouMissedImg1,
+      vidName: "How Websites Learned to Fit Everywhere",
+      channelImg: juxtopposed,
+      channelName: "Juxtopposed",
+      views: "150K",
+      time: "4 months"
+    }
+  ] 
+
   const [hovered, setHovered] = useState(false)
 
   return (
@@ -118,6 +132,36 @@ const Home = () => {
                   </div>
                 ))}
                 
+              </div>
+
+              <div className="inCaseYouMissed">
+                <div className="inCaseYouMissedTxt">
+                  <p>In Case You Missed</p>
+                  <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.0005 8.05376L1.9275 13.127C1.789 13.2653 1.61492 13.3362 1.40525 13.3395C1.19575 13.3427 1.0185 13.2718 0.8735 13.127C0.728667 12.982 0.65625 12.8063 0.65625 12.6C0.65625 12.3937 0.728667 12.218 0.8735 12.073L5.94675 7.00001L0.8735 1.92701C0.735167 1.78851 0.664333 1.61443 0.661 1.40476C0.657833 1.19526 0.728667 1.01801 0.8735 0.873012C1.0185 0.728178 1.19417 0.655762 1.4005 0.655762C1.60683 0.655762 1.7825 0.728178 1.9275 0.873012L7.0005 5.94626L12.0735 0.873012C12.212 0.734678 12.3861 0.663845 12.5958 0.660512C12.8053 0.657345 12.9825 0.728178 13.1275 0.873012C13.2723 1.01801 13.3448 1.19368 13.3448 1.40001C13.3448 1.60635 13.2723 1.78201 13.1275 1.92701L8.05425 7.00001L13.1275 12.073C13.2658 12.2115 13.3367 12.3856 13.34 12.5953C13.3432 12.8048 13.2723 12.982 13.1275 13.127C12.9825 13.2718 12.8068 13.3443 12.6005 13.3443C12.3942 13.3443 12.2185 13.2718 12.0735 13.127L7.0005 8.05376Z" fill="white"/>
+                  </svg>
+                </div>
+
+                <div className="inCaseYouMissedContentBox">
+                  {inCaseYouMissedContents.map((inCaseYouMissedContent) => (
+                    <div key={inCaseYouMissedContent.id} className="inCaseYouMissedContent">
+                        <img src={inCaseYouMissedContent.img} alt="" className='inCaseYouMissedContentVidImg'/>
+                        
+                        <div className='incaseyoumissedvidinfo'>
+                          <img src={inCaseYouMissedContent.channelImg} alt="" className="channelImg"/>
+                          <div className='incaseyoumissedvidinfodesc'>
+                              <p className='vidName'><b>{inCaseYouMissedContent.vidName}</b></p>
+                              <p>{inCaseYouMissedContent.channelName}</p>
+                              <p>{inCaseYouMissedContent.views} views . {inCaseYouMissedContent.time} ago</p>
+                          </div>
+                          <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M2 15.0867C1.5875 15.0867 1.23442 14.9398 0.94075 14.646C0.646917 14.3523 0.5 13.9992 0.5 13.5867C0.5 13.1742 0.646917 12.8211 0.94075 12.5272C1.23442 12.2336 1.5875 12.0867 2 12.0867C2.4125 12.0867 2.76558 12.2336 3.05925 12.5272C3.35308 12.8211 3.5 13.1742 3.5 13.5867C3.5 13.9992 3.35308 14.3523 3.05925 14.646C2.76558 14.9398 2.4125 15.0867 2 15.0867ZM2 9.31747C1.5875 9.31747 1.23442 9.17055 0.94075 8.87672C0.646917 8.58305 0.5 8.22997 0.5 7.81747C0.5 7.40497 0.646917 7.05189 0.94075 6.75822C1.23442 6.46439 1.5875 6.31747 2 6.31747C2.4125 6.31747 2.76558 6.46439 3.05925 6.75822C3.35308 7.05189 3.5 7.40497 3.5 7.81747C3.5 8.22997 3.35308 8.58305 3.05925 8.87672C2.76558 9.17055 2.4125 9.31747 2 9.31747ZM2 3.54822C1.5875 3.54822 1.23442 3.40138 0.94075 3.10772C0.646917 2.81388 0.5 2.46072 0.5 2.04822C0.5 1.63572 0.646917 1.28263 0.94075 0.988968C1.23442 0.695135 1.5875 0.548218 2 0.548218C2.4125 0.548218 2.76558 0.695135 3.05925 0.988968C3.35308 1.28263 3.5 1.63572 3.5 2.04822C3.5 2.46072 3.35308 2.81388 3.05925 3.10772C2.76558 3.40138 2.4125 3.54822 2 3.54822Z" fill="white"/>
+                          </svg>
+                        </div>
+
+                    </div>
+                  ))}
+                </div>
               </div>
           </div>
       </div>
