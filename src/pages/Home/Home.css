@@ -5,6 +5,7 @@
     display: flex;
     /* flex-direction: column; */
     background-color: transparent;
+    /* justify-content: space-around; */
     gap: 20px;
     /* border: 1px solid wheat; */
     
@@ -16,10 +17,38 @@
     display: flex;
 } */
 .homepage{
-    width: 1469px;
+    /* width: 1459px; */
+    width: 80%;
     height: 2454.82px;
+    /* width: max-content; */
+    /* max-width: max-content; */
     left: 369px;
     top: 144px;
     /* background-color: teal; */
     padding-top: 66px;
+}
+
+.filterNav{
+    height: 36px;
+    /* width: 110%; */
+    /* width: 1469px; */
+    /* background-color: salmon; */
+    display: flex;
+    gap: 10px;
+    /* overflow: hidden; */
+    /* overflow-x: scroll; */
+}
+.filterNav::-webkit-scrollbar{
+    height: 1px;
+}
+.filterIcon{
+    height: 36px;
+    border-radius: 8px;
+    /* gap: 8px; */
+    /* padding: 12px; */
+    background-color: rgb(255, 255, 255, 0.14);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

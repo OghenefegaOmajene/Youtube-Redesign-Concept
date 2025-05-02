@@ -5,7 +5,8 @@
     /* left: 0px; */
     display: flex;
     align-items: center;
-    /* gap: 346px; */
+    /* justify-content: space-between; */
+    gap: 146px;
     /* top: 0px; */
     width: 98.7%;
     /* border: 1px solid rgb(255, 6, 6); */
@@ -33,10 +34,50 @@
 }
 
 .search{
-    width: 727px;
+    width: 500px;
     height: 20%;
+    /* height: 40px; */
     padding: 15px;
     border: 1px solid #2A2A2A;
     border-radius: 30px;
     background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbaricons{
+    width: 174px;
+    height: 30px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    /* gap: 24px; */
+    justify-content: space-between;
+}
+
+.microphone{
+    width: 64px;
+    height: 40px;
+    /* border: 1px solid #242424; */
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.searchInputBox{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.searchInput{
+    height: 24px;
+    background-color: transparent;
+    border: 0;
+    outline: none;
+    color: white;
+}
+/* fff 40% down */
+.searchInput::placeholder{
+    color: rgb(255, 255, 255, 0.4);
 }
