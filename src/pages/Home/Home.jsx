@@ -5,6 +5,11 @@ import Navbar from '../../components/Navbar/Navbar'
 import inCaseYouMissedImg1 from '../../assets/inCaseYouMissedImg1.png'
 import inCaseYouMissedImg2 from '../../assets/inCaseYouMissedImg2.png'
 import inCaseYouMissedImg3 from '../../assets/inCaseYouMissedImg3.png'
+import ytRedesign from '../../assets/ytRedesign.png'
+import lofi from '../../assets/lofi.png'
+import cat from '../../assets/cat.png'
+import lofigirl from '../../assets/lofigirl.png'
+import wvwUser from '../../assets/wvwUser.png'
 import juxtopposed from '../../assets/juxtopposed.png'
 
 const Home = () => {
@@ -138,6 +143,33 @@ const Home = () => {
       channelName: "Juxtopposed",
       views: "315K",
       time: "3 months"
+    },
+    {
+      id: 4,
+      img: ytRedesign,
+      vidName: "I Redesigned the ENTIRE YouTube UI from Scratch",
+      channelImg: juxtopposed,
+      channelName: "Juxtopposed",
+      views: "50K",
+      time: "1 day"
+    },
+    {
+      id: 5,
+      img: lofi,
+      vidName: "christmas lofi radio 🎄 cozy beats to get festive to",
+      channelImg: lofigirl,
+      channelName: "Lofi Girl",
+      views: "120K",
+      time: "1 day"
+    },
+    {
+      id: 6,
+      img: cat,
+      vidName: "How a cat works",
+      channelImg: wvwUser,
+      channelName: "WVW",
+      views: "4M",
+      time: "11 months"
     }
   ] 
 
@@ -175,7 +207,7 @@ const Home = () => {
                 </div>
 
                 <div className="inCaseYouMissedContentBox">
-                  {inCaseYouMissedContents.map((inCaseYouMissedContent) => (
+                  {inCaseYouMissedContents.slice(0, 3).map((inCaseYouMissedContent) => (
                     <div key={inCaseYouMissedContent.id} className="inCaseYouMissedContent">
                         <img src={inCaseYouMissedContent.img} alt="" className='inCaseYouMissedContentVidImg'/>
                         
@@ -194,6 +226,28 @@ const Home = () => {
                     </div>
                   ))}
                 </div>
+
+                <div className="videos">
+                  {inCaseYouMissedContents.slice(3).map((inCaseYouMissedContent) => (
+                    <div key={inCaseYouMissedContent.id} className="inCaseYouMissedContent">
+                      <img src={inCaseYouMissedContent.img} alt="" className='inCaseYouMissedContentVidImg'/>
+                          
+                      <div className='incaseyoumissedvidinfo'>
+                        <img src={inCaseYouMissedContent.channelImg} alt="" className="channelImg"/>
+                        <div className='incaseyoumissedvidinfodesc'>
+                          <p className='vidName'><b>{inCaseYouMissedContent.vidName}</b></p>
+                          <p>{inCaseYouMissedContent.channelName}</p>
+                          <p>{inCaseYouMissedContent.views} views . {inCaseYouMissedContent.time} ago</p>
+                        </div>
+                        <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                          <path d="M2 15.0867C1.5875 15.0867 1.23442 14.9398 0.94075 14.646C0.646917 14.3523 0.5 13.9992 0.5 13.5867C0.5 13.1742 0.646917 12.8211 0.94075 12.5272C1.23442 12.2336 1.5875 12.0867 2 12.0867C2.4125 12.0867 2.76558 12.2336 3.05925 12.5272C3.35308 12.8211 3.5 13.1742 3.5 13.5867C3.5 13.9992 3.35308 14.3523 3.05925 14.646C2.76558 14.9398 2.4125 15.0867 2 15.0867ZM2 9.31747C1.5875 9.31747 1.23442 9.17055 0.94075 8.87672C0.646917 8.58305 0.5 8.22997 0.5 7.81747C0.5 7.40497 0.646917 7.05189 0.94075 6.75822C1.23442 6.46439 1.5875 6.31747 2 6.31747C2.4125 6.31747 2.76558 6.46439 3.05925 6.75822C3.35308 7.05189 3.5 7.40497 3.5 7.81747C3.5 8.22997 3.35308 8.58305 3.05925 8.87672C2.76558 9.17055 2.4125 9.31747 2 9.31747ZM2 3.54822C1.5875 3.54822 1.23442 3.40138 0.94075 3.10772C0.646917 2.81388 0.5 2.46072 0.5 2.04822C0.5 1.63572 0.646917 1.28263 0.94075 0.988968C1.23442 0.695135 1.5875 0.548218 2 0.548218C2.4125 0.548218 2.76558 0.695135 3.05925 0.988968C3.35308 1.28263 3.5 1.63572 3.5 2.04822C3.5 2.46072 3.35308 2.81388 3.05925 3.10772C2.76558 3.40138 2.4125 3.54822 2 3.54822Z" fill="white"/>
+                        </svg>
+                      </div>
+
+                    </div>
+                  ))}
+                </div>
+
               </div>
           </div>
       </div>
