@@ -7,6 +7,7 @@
     /* background-color: white; */
     /* justify-content: space-around; */
     gap: 20px !important;
+    
     /* border: 1px solid wheat; */
     
 }
@@ -18,8 +19,9 @@
 } */
 .homepage{
     /* width: 1459px; */
-    padding-left: 239px;
-    width: 100%;
+    /* padding-left: 239px; */
+    margin-left: 239px;
+    width: 80%;
     height: 2454.82px;
     /* width: max-content; */
     /* max-width: max-content; */
@@ -29,6 +31,7 @@
     flex-direction: column;
     /* margin-left: 239px; */
     gap: 20px;
+    /* overflow-x: hidden; */
     right: 0px;
     /* background-color: rgb(38, 128, 0); */
     /* padding-top: 20px; */
@@ -36,9 +39,11 @@
 
 .filterNav{
     height: 76px;
+    /* width: auto; */
     width: 100%;
     /* width: 1469px; */
     background-color: black;
+    /* background-color: saddlebrown; */
     display: flex;
     align-items: center;
     position: sticky;
@@ -46,7 +51,7 @@
     top: 66px;
     gap: 10px;
     /* overflow: hidden; */
-    /* overflow-x: scroll; */
+    overflow-x: scroll;
 }
 .filterNav::-webkit-scrollbar{
     height: 1px;
@@ -55,18 +60,25 @@
     height: 36px;
     border-radius: 8px;
     /* gap: 8px; */
-    /* padding: 12px; */
+    padding: 0px 8px 0px 8px;
     background-color: rgb(255, 255, 255, 0.14);
     color: white;
     display: flex;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
+}
+.filterIcon:hover{
+    color: black;
+    background-color: white;
+    transition: 0.6s;
 }
 
 
 .inCaseYouMissed{
     height: 314px;
     width: 94.5%;
+    /* width: 100%; */
     padding: 20px;
     /* margin-top: 20px; */
     display: flex;

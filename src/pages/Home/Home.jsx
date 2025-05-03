@@ -77,26 +77,37 @@ const Home = () => {
       width: "102px",
       name: "Electronics"
     },
-    // {
-    //   id: 12,
-    //   width: "145px",
-    //   name: "New Creators"
-    // },
-    // {
-    //   id: 13,
-    //   width: "52px",
-    //   name: "Art"
-    // },
-    // {
-    //   id: 14,
-    //   width: "102px",
-    //   name: "Tech News"
-    // },
-    // {
-    //   id: 15,
-    //   width: "94px",
-    //   name: "UI/UX"
-    // },
+    {
+      id: 12,
+      width: "145px",
+      name: "New Creators",
+      icon: <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M7.01661 1.32872C7.21801 0.237365 8.78199 0.237365 8.98339 1.32872L9.72295 5.33615C9.79596 5.73176 10.0989 6.0451 10.4918 6.13139L14.5528 7.02328C15.6001 7.2533 15.6001 8.7467 14.5528 8.97672L10.4918 9.86861C10.0989 9.9549 9.79596 10.2682 9.72295 10.6638L8.98339 14.6713C8.78199 15.7626 7.21801 15.7626 7.01661 14.6713L6.27705 10.6638C6.20404 10.2682 5.90109 9.9549 5.50817 9.86861L1.44723 8.97672C0.399908 8.7467 0.399908 7.2533 1.44723 7.02328L5.50817 6.13139C5.90109 6.0451 6.20404 5.73176 6.27705 5.33615L7.01661 1.32872Z" fill="url(#paint0_linear_2044_261)"/>
+              <defs>
+              <linearGradient id="paint0_linear_2044_261" x1="-3" y1="8" x2="19" y2="8" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#FF0033"/>
+              <stop offset="1" stop-color="#F50057"/>
+              </linearGradient>
+              </defs>
+            </svg>,
+      bgColor: "rgb(255, 170, 187, 0.14)"
+      
+    },
+    {
+      id: 13,
+      width: "52px",
+      name: "Art"
+    },
+    {
+      id: 14,
+      width: "102px",
+      name: "Tech News"
+    },
+    {
+      id: 15,
+      width: "94px",
+      name: "UI/UX"
+    },
     
   ]
 
@@ -145,6 +156,7 @@ const Home = () => {
                     className="filterIcon" 
                     style={{
                       width: filterNavElement.width,
+                      backgroundColor: filterNavElement.bgColor
                     }}
                   >
                     <i>{filterNavElement.icon}</i>
