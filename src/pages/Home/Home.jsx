@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 import './Home.css'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import Navbar from '../../components/Navbar/Navbar'
@@ -230,12 +231,17 @@ const Home = () => {
                 <div className="videos">
                   {inCaseYouMissedContents.slice(3).map((inCaseYouMissedContent) => (
                     <div key={inCaseYouMissedContent.id} className="inCaseYouMissedContent">
-                      <img src={inCaseYouMissedContent.img} alt="" className='inCaseYouMissedContentVidImg'/>
-                          
+                      <Link to="/Video" style={{textDecoration: "none"}}>
+                        <img src={inCaseYouMissedContent.img} alt="" className='inCaseYouMissedContentVidImg'/>
+                      </Link>
+
                       <div className='incaseyoumissedvidinfo'>
-                        <img src={inCaseYouMissedContent.channelImg} alt="" className="channelImg"/>
+                        <Link to="/Channel" style={{textDecoration: "none"}}>
+                          <img src={inCaseYouMissedContent.channelImg} alt="" className="channelImg"/>
+                        </Link>
                         <div className='incaseyoumissedvidinfodesc'>
-                          <p className='vidName'><b>{inCaseYouMissedContent.vidName}</b></p>
+                          <Link to="/Video" style={{textDecoration: "none"}}><p className='vidName'><b>{inCaseYouMissedContent.vidName}</b></p></Link>
+                          
                           <p>{inCaseYouMissedContent.channelName}</p>
                           <p>{inCaseYouMissedContent.views} views . {inCaseYouMissedContent.time} ago</p>
                         </div>
