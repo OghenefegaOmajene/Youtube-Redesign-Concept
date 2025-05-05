@@ -36,3 +36,53 @@
     height: 141px;
     /* border: 1px solid greenyellow; */
 }
+.channelHead{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    border: 1px solid white;
+    margin-top: -60px;
+    align-items: end;
+}
+.channelProfileImg{
+    width: 100px;
+    height: 100%;
+}
+.channelStats{
+    border: 1px solid #ffffff;
+    height: 74px;
+    width: 787px;
+    color: #AAAAAA;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+}
+span{
+    color: white;
+}
+.channelStats p{
+    margin: 0;
+    padding: 0;
+}
+
+.quickActions{
+    width: 192px;
+    height: 100%;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    gap: 10px;
+}
+.channelSubscribeBtn{
+    border: 0;
+    width: 100%;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    color: white;
+    border-radius: 23px;
+    background-color: rgb(255, 255, 255, 0.08);
+}
