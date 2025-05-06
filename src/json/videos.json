@@ -1,0 +1,56 @@
+[
+    {
+        "id": 1,
+        "img": "inCaseYouMissedImg1.png",
+        "vidName": "How Websites Learned to Fit Everywhere",
+        "channelImg": "juxtopposed.png",
+        "channelName": "Juxtopposed",
+        "views": "150K",
+        "time": "4 months"
+      },
+      {
+        "id": 2,
+        "img": "inCaseYouMissedImg2.png",
+        "vidName": "I Redesigned Discord UI just to make it Cozier",
+        "channelImg": "juxtopposed.png",
+        "channelName": "Juxtopposed",
+        "views": "433K",
+        "time": "1 month"
+      },
+      {
+        "id": 3,
+        "img": "inCaseYouMissedImg3.png",
+        "vidName": "everything about color (literally)",
+        "channelImg": "juxtopposed.png",
+        "channelName": "Juxtopposed",
+        "views": "315K",
+        "time": "3 months"
+      },
+      {
+        "id": 4,
+        "img":"ytRedesign.png",
+       "vidName": "I Redesigned the ENTIRE YouTube UI from Scratch",
+        "channelImg": "juxtopposed.png",
+        "channelName": "Juxtopposed",
+        "views": "50K",
+        "time": "1 day"
+      },
+      {
+        "id": 5,
+        "img": "lofi.png",
+        "vidName": "christmas lofi radio 🎄 cozy beats to get festive to",
+        "channelImg": "lofigirl.png",
+        "channelName": "Lofi Girl",
+        "views": "120K",
+        "time": "1 day"
+      },
+      {
+        "id": 6,
+        "img": "cat.png",
+        "vidName": "How a cat works",
+        "channelImg": "wvwUser.png",
+        "channelName": "WVW",
+        "views": "4M",
+        "time": "11 months"
+      }
+]
