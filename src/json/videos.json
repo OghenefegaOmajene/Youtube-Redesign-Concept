@@ -1,7 +1,7 @@
 [
     {
         "id": 1,
-        "img": "inCaseYouMissedImg1.png",
+        "img": "everywhere.png",
         "vidName": "How Websites Learned to Fit Everywhere",
         "channelImg": "juxtopposed.png",
         "channelName": "Juxtopposed",
@@ -10,7 +10,7 @@
       },
       {
         "id": 2,
-        "img": "inCaseYouMissedImg2.png",
+        "img": "discordRedesign.png",
         "vidName": "I Redesigned Discord UI just to make it Cozier",
         "channelImg": "juxtopposed.png",
         "channelName": "Juxtopposed",
@@ -19,7 +19,7 @@
       },
       {
         "id": 3,
-        "img": "inCaseYouMissedImg3.png",
+        "img": "color.png",
         "vidName": "everything about color (literally)",
         "channelImg": "juxtopposed.png",
         "channelName": "Juxtopposed",
@@ -52,5 +52,34 @@
         "channelName": "WVW",
         "views": "4M",
         "time": "11 months"
+      },
+
+
+      {
+        "id": 7,
+        "img":"appleSearchEngine.png",
+       "vidName": "What if Apple made a Search Engine",
+        "channelImg": "juxtopposed.png",
+        "channelName": "Juxtopposed",
+        "views": "160K",
+        "time": "1 month"
+      },
+      {
+        "id": 8,
+        "img": "discordRedesign.png",
+        "vidName": "I Redesigned Discord UI just to make it Cozier",
+        "channelImg": "lofigirl.png",
+        "channelName": "Juxtopposed",
+        "views": "449K",
+        "time": "2 months"
+      },
+      {
+        "id": 9,
+        "img": "mkbhd.png",
+        "vidName": "MKBHD's Wallpaper App Could be Way Better - My Review & Redesign",
+        "channelImg": "wvwUser.png",
+        "channelName": "Juxtopposed",
+        "views": "296K",
+        "time": "2 months"
       }
 ]

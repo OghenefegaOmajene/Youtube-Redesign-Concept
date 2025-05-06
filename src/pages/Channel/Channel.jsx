@@ -1,4 +1,5 @@
 import React, {useState} from 'react'
+import { Link } from 'react-router-dom'
 import Navbar from '../../components/Navbar/Navbar'
 import Sidebar from '../../components/Sidebar/Sidebar'
 import channelBanner from '../../assets/channelBanner.png'
@@ -8,8 +9,17 @@ import juxtopposed from '../../assets/juxtopposed.png'
 import x from '../../assets/x.png'
 import ball from '../../assets/ball.png'
 import figma from '../../assets/figma.png'
+import videoData from '../../json/videos.json'
 
 const Channel = () => {
+
+  const images = import.meta.glob('../../assets/*', { eager: true });
+
+  const getImage = (filename) => {
+    const entry = Object.entries(images).find(([key]) => key.includes(filename));
+    return entry ? entry[1].default : '';
+  };
+
   const [hovered, setHovered] = useState({
       grid: false,
       list: false,
@@ -123,6 +133,32 @@ const Channel = () => {
                   </div>
                 </div>
                 
+              </div>
+
+
+              <div className="videos">
+                {videoData.slice(6, 9).map((videoData) => (
+                  <div key={videoData.id} className="inCaseYouMissedContent">
+                    <Link to="/Video" style={{textDecoration: "none"}}>
+                      <img src={getImage(videoData.img)} alt="" className='inCaseYouMissedContentVidImg'/>
+                    </Link>
+              
+                    <div className='incaseyoumissedvidinfo'>
+                      {/* <Link to="/Channel" style={{textDecoration: "none"}}>
+                        <img src={getImage(videoData.channelImg)} alt="" className="channelImg"/>
+                      </Link> */}
+                      <div className='incaseyoumissedvidinfodesc'>
+                        <Link to="/Video" style={{textDecoration: "none"}}><p className='vidName'><b>{videoData.vidName}</b></p></Link>
+                          <p>{videoData.channelName}</p>
+                          <p>{videoData.views} views . {videoData.time} ago</p>
+                      </div>
+                      <svg width="4" height="16" viewBox="0 0 4 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2 15.0867C1.5875 15.0867 1.23442 14.9398 0.94075 14.646C0.646917 14.3523 0.5 13.9992 0.5 13.5867C0.5 13.1742 0.646917 12.8211 0.94075 12.5272C1.23442 12.2336 1.5875 12.0867 2 12.0867C2.4125 12.0867 2.76558 12.2336 3.05925 12.5272C3.35308 12.8211 3.5 13.1742 3.5 13.5867C3.5 13.9992 3.35308 14.3523 3.05925 14.646C2.76558 14.9398 2.4125 15.0867 2 15.0867ZM2 9.31747C1.5875 9.31747 1.23442 9.17055 0.94075 8.87672C0.646917 8.58305 0.5 8.22997 0.5 7.81747C0.5 7.40497 0.646917 7.05189 0.94075 6.75822C1.23442 6.46439 1.5875 6.31747 2 6.31747C2.4125 6.31747 2.76558 6.46439 3.05925 6.75822C3.35308 7.05189 3.5 7.40497 3.5 7.81747C3.5 8.22997 3.35308 8.58305 3.05925 8.87672C2.76558 9.17055 2.4125 9.31747 2 9.31747ZM2 3.54822C1.5875 3.54822 1.23442 3.40138 0.94075 3.10772C0.646917 2.81388 0.5 2.46072 0.5 2.04822C0.5 1.63572 0.646917 1.28263 0.94075 0.988968C1.23442 0.695135 1.5875 0.548218 2 0.548218C2.4125 0.548218 2.76558 0.695135 3.05925 0.988968C3.35308 1.28263 3.5 1.63572 3.5 2.04822C3.5 2.46072 3.35308 2.81388 3.05925 3.10772C2.76558 3.40138 2.4125 3.54822 2 3.54822Z" fill="white"/>
+                      </svg>
+                    </div>
+              
+                  </div>
+                ))}
               </div>
 
             </div>

@@ -180,7 +180,7 @@ const Home = () => {
                 </div>
 
                 <div className="videos">
-                  {videoData.slice(3).map((videoData) => (
+                  {videoData.slice(3, 6).map((videoData) => (
                     <div key={videoData.id} className="inCaseYouMissedContent">
                       <Link to="/Video" style={{textDecoration: "none"}}>
                         <img src={getImage(videoData.img)} alt="" className='inCaseYouMissedContentVidImg'/>
